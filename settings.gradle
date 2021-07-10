@@ -1,0 +1,6 @@
+rootProject.name = 'kotlin-template-gradle-parent'
+
+include ':kotlin-template-gradle'
+include ':examples:example1'
+include ':examples:example2'
+include ':examples:example3'
