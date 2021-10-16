@@ -1,5 +1,5 @@
 ext {
-    kotlinVersion = '1.5.20'
+    kotlinVersion = '1.5.31'
     jvmTargetVersion = '1.8'
     coroutinesVersion = '1.5.0'
     kotlinSerializationVersion = '1.2.1'
@@ -25,15 +25,14 @@ ext {
                     'coroutines_core'       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}",
                     'kotlinSerialization'   : "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${kotlinSerializationVersion}"
             ],
-            'groovy'    : "org.codehaus.groovy:groovy-all:${groovyVersion}",
             'slf4j'     : "org.slf4j:slf4j-api:${slf4jVersion}",
-            'slf4jnop'  : "org.slf4j:slf4j-nop:${slf4jNopVersion}",
             'logback'   : "ch.qos.logback:logback-classic:${logbackVersion}",
             'ktlint'    : "com.pinterest:ktlint:${ktlintVersion}",
             'kotest'    : [
                     'junit5' : "io.kotest:kotest-runner-junit5:$kotestVersion",
                     'assertions' : "io.kotest:kotest-assertions-core:$kotestVersion",
-                    'property' : "io.kotest:kotest-property:$kotestVersion"
+                    'property' : "io.kotest:kotest-property:$kotestVersion",
+                    'datatest' : "io.kotest:kotest-framework-datatest:$kotestVersion"
             ]
     ]
 
